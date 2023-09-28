@@ -6,6 +6,7 @@ phases:
       - echo "$BUILD_COMMAND"
 
 artifacts:
-  discard-paths: yes
   files:
-    - MyApp
+    - '**/*'
+  base-directory: 'my-build*'
+  discard-paths: no
