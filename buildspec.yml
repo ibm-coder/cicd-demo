@@ -1,10 +1,11 @@
-version: 0.2
+version: 0.1
 
 phases:
   build:
     commands:
-      - ls
+      - echo `$BUILD_COMMAND`
 
 artifacts:
+  discard-paths: yes
   files:
-    - public/*
+    - MyApp
